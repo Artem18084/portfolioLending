@@ -1,0 +1,528 @@
+:root {
+  font-family: "Libre Franklin", sans-serif;
+  --headercolor: #ffffff;
+  --maincolor: #333333;
+  --yelowBack: #fffaf2;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* нормалізація */
+body,
+header,
+nav,
+img,
+section,
+div,
+span,
+ul,
+ol,
+li,
+footer,
+p,
+progress,
+h1,
+h2,
+h3,
+h4 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+body {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  font-style: normal;
+}
+h3 {
+  font-size: 12px;
+}
+
+/* font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+text-align: justify;
+} */
+/* хедер */
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-image: url(/pictures/tell\ header\ color.png),
+    url(/pictures/walle\ tell.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--headercolor);
+  padding: 36px 0 50px;
+}
+.portofolio {
+  margin-right: 1px;
+}
+nav {
+  display: none;
+}
+.burger {
+  position: absolute;
+  top: 39px;
+  left: 34px;
+  width: 24px;
+  height: 24px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.supTitle {
+  font-weight: 400;
+  margin-top: 50px;
+  font-size: 20px;
+  line-height: 24px;
+}
+.disignerFrom {
+  font-weight: 400;
+  margin-top: 13px;
+  font-size: 13px;
+  line-height: 16px;
+}
+.latestWorks {
+  font-style: normal;
+  font-weight: 400;
+  margin-right: 1px;
+  margin-top: 41px;
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration: underline;
+}
+
+/* about */
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 29px 25px 34px;
+}
+.titleAbout {
+  margin-right: 8px;
+}
+
+.contanerForP p {
+  text-align: justify;
+}
+.contanerForP {
+  margin-top: 19px;
+}
+.aboutTextFirst {
+  margin-bottom: 16px;
+}
+
+/* skills */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--yelowBack);
+  padding: 24px 32px 25px 34px;
+}
+.titleSkills {
+  margin-right: 5px;
+}
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo {
+  margin-right: 10px;
+  margin-top: 25px;
+}
+
+/* блок проблємний  */
+.experience {
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 26px;
+  margin-left: 10px;
+}
+
+.titleExpirience {
+  display: flex;
+}
+.profile,
+.progresColumn *:nth-child(odd) {
+  width: 82px;
+  margin-right: 16px;
+}
+
+.knowelendgList {
+  font-weight: 400;
+}
+
+.progressContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 31px;
+}
+
+.Second {
+  margin-top: 9px;
+}
+.Third,
+.Fifth {
+  margin-top: 18px;
+}
+.Fourth {
+  margin-top: 10px;
+}
+.Sixth {
+  margin-top: 8px;
+}
+
+.progresColumn {
+  display: flex;
+  align-items: center;
+}
+.progresColumn *:nth-child(odd) {
+  font-weight: 600;
+}
+/* .progresColumn:nth-child(n + 2) {
+  margin-top: 8px;
+} */
+
+progress::-webkit-progress-bar {
+  background-color: #f5d6ab;
+}
+
+.progres {
+  width: 150px;
+  background-color: #f5d6ab;
+  width: 211px;
+  height: 18px;
+}
+
+progress::-webkit-progress-value {
+  background: #c66c49;
+}
+
+/* portfolio */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 33px 24.53px 34px;
+}
+
+.containerPortfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titlePortofolio {
+  margin-right: 2px;
+}
+
+.subtitle {
+  margin-left: 1px;
+  margin-top: 20px;
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+}
+.textPortfilio {
+  margin-top: 15px;
+  text-align: center;
+}
+.pictures {
+  display: flex;
+  margin-top: 26px;
+}
+/* .boats , .front , .bridg , .wale{
+  object-fit: fill;
+}   */
+
+.water,
+.noWater {
+  display: flex;
+  flex-direction: column;
+}
+.water {
+  margin-right: 14.56px;
+}
+.front {
+  margin-top: 12.61px;
+}
+.wale {
+  margin-top: 8.73px;
+}
+/* footer */
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: var(--yelowBack);
+  padding: 23px 106px 50px 41px;
+}
+.titleGet {
+  margin-left: 78px;
+}
+.geting {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 25px;
+}
+.socialCodeMedia {
+  display: flex;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.codePlatforms {
+  width: 61px;
+  margin-right: 99px;
+}
+.codePlatforms *:nth-child(n + 2),
+.socialiti *:nth-child(n + 2) {
+  margin-top: 19px;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.875rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.mail {
+  font-size: 014px;
+  line-height: 17px;
+}
+.phone {
+  margin-top: 0.4375rem;
+}
+.up {
+  position: absolute;
+  bottom: 58px;
+  right: 32px;
+  width: 24px;
+  height: 24px;
+}
+@media (min-width: 400px) {
+  body {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .portofolio,
+  .burger {
+    display: none;
+  }
+
+  header {
+    display: block;
+    background-image: url(/pictures/headerDeskBack.png),
+      url(/pictures/waleDesk.png);
+    padding: 93px 166px 240px 165px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+  }
+  .portofolioDesk {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .navListDeckTop {
+    line-height: 22px;
+    color: #ffffff;
+  }
+  .navListDeckTop-Home {
+    font-weight: 700;
+  }
+  .navListDeckTop-About {
+    margin-left: 59px;
+  }
+  .navListDeckTop :nth-child(n + 3) {
+    padding-left: 60px;
+  }
+
+  /* .navListDeckTop-Portofolio, .navListDeckTop-Skills, .navListDeckTop-About, .navListDeckTop-Home{
+    
+  } */
+  .supTitle {
+    margin-top: 145px;
+    font-size: 64px;
+    line-height: 78px;
+  }
+  .disignerFrom {
+    margin-top: 26px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .latestWorks {
+    margin-top: 106px;
+    margin-right: 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  /* about */
+  .about {
+    display: block;
+    padding: 93px 167px 133px 166px;
+  }
+  .title {
+    font-weight: 700;
+  }
+
+  .contanerForP {
+    margin-top: 76px;
+  }
+  .aboutTextFirst {
+    margin-bottom: 31px;
+  }
+  /* skills */
+  .skills {
+    display: block;
+    padding: 93px 165px 145px;
+  }
+  .photo {
+    margin: 0;
+  }
+  .skillsContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 86px;
+  }
+  .experience {
+    margin-top: 0;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .progressContainer {
+    flex-direction: column-reverse;
+    margin-top: 65px;
+  }
+  .profile,
+  .progresColumn *:nth-child(odd) {
+    width: 123px;
+    margin-right: 66px;
+  }
+  .knowelendgList {
+    width: 446px;
+  }
+  .progres {
+    width: 150px;
+    background-color: #f5d6ab;
+    width: 446px;
+    height: 24px;
+  }
+  .Fifth {
+    margin-top: 0;
+  }
+  .Second,
+  .Fourth,
+  .Sixth {
+    margin-top: 21px;
+  }
+  .First,
+  .Third {
+    margin-top: 20px;
+  }
+  .portfolio {
+    padding: 93px 165px 145px 166px;
+    align-items: start;
+  }
+  .deskPortfolioPictures {
+    display: flex;
+    margin-top: 41px;
+  }
+  .subtitle {
+    margin-top: 86px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .textPortfilio {
+    margin: 0;
+    margin-right: 125px;
+    padding-top: 7px;
+
+    text-align: justify;
+    font-size: 18px;
+  }
+  .pictures {
+    margin-top: 0;
+  }
+  .water {
+    margin-right: 30px;
+  }
+  .front {
+    margin-top: 26px;
+  }
+  .wale {
+    margin-top: 25px;
+  }
+  footer {
+    padding: 93px 347px 189px 165px;
+  }
+  .titleGet {
+    margin: 0;
+  }
+  .geting {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 51px;
+  }
+  .codePlatforms *:nth-child(n + 2),
+  .socialiti *:nth-child(n + 2),
+  .contacts *:nth-child(2) {
+    margin-top: 14px;
+  }
+
+  .socialCodeMedia {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .codePlatforms {
+    margin-right: 302px;
+  }
+  .contacts {
+    margin-top: 0;
+  }
+  .mail {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .phone {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .up {
+    right: 180px;
+    bottom: 70px;
+  }
+}
